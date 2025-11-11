@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Mendoza Oculta" startnode="2" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="F99BEA1E-6C58-47B7-A013-9995A9FC67AF" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+	<tw-storydata name="Mendoza Oculta" startnode="2" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="F99BEA1E-6C58-47B7-A013-9995A9FC67AF" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
 
 #ui-bar {
 	display: none;
@@ -115,7 +115,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   color: #222;
   padding: 20px;
   margin: 20px;
-  background-color: #5B3B2C;
+  background-color: #acacac;
   box-shadow: 0 0 30px rgba(0,0,0,0.3);
   border-radius: 6px;
   background: linear-gradient(#fafafa, #efefef);
@@ -148,14 +148,14 @@ passage {
 }
 
 a {
-  color: #5B2C35;
+  color: #280e11;
   text-decoration: none;
   font-weight: bold;
   font-size: large;
 }
 
 a:hover {
-  color: #5B2C35;
+  color: #3f1016;
   display: inline-block;
   animation: jitter 0.8s infinite;
 }
@@ -164,8 +164,8 @@ a:hover {
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  border-color: #5B2C35; 
-  color: #5B2C35;
+  border-color: #280e11; 
+  color: #3f1016;
 }
 
 .acciones-grid {
@@ -188,7 +188,7 @@ input[type="submit"]:hover {
 .accion-btn {
   padding: 0.5rem 0.6rem;
   border-radius: 6px;
-  border: 1px solid #5a5a5a;
+  border: 1px solid #090909;
   background: linear-gradient(#fafafa, #efefef);
   color: #222;
   font-weight: 600;
@@ -199,12 +199,14 @@ input[type="submit"]:hover {
   box-sizing: border-box;
 }
 
+
+
 .accion-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.06); }
 
 .accion-no-disponible {
   background: linear-gradient(#f0e6e6, #ecdede);
   border-color: #c99;
-  color: #CCC2C2;
+  color: #acacac;
   cursor: default;
   opacity: 0.95;
   transform: none;
@@ -365,12 +367,11 @@ Ahora el nombre le quedaba perfecto, casi como si se lo hubieran colocado sabien
 
 [[Revolver .36]]
 
-[[Volver-&gt;$pa]]</tw-passagedata><tw-passagedata pid="6" name="Ayuda" tags="" position="25,275" size="100,100">&lt;&lt;if $avance = 0&gt;&gt;Objetivo: Entra en la casa.
+[[Volver-&gt;$pa]]</tw-passagedata><tw-passagedata pid="6" name="Ayuda" tags="" position="25,275" size="100,100">Casa Expósito es una historia web interactiva pensada como complemento de Mendoza Oculta. Utiliza los comandos para realizar diversas acciones y así avanzar la historia; ¡Presta mucha atención! Detalles de esta experiencia pueden servirte para otras instancias.
+
+&lt;&lt;if $avance = 0&gt;&gt;Objetivo: Entra en la casa.
 &lt;&lt;elseif $avance = 1&gt;&gt;Objetivo: Encuentra al oficial.
 &lt;&lt;/if&gt;&gt;
-
-Mendoza Oculta: Disco 0 es una historia web interactiva. Utiliza los comandos para realizar diversas acciones y asi avanzar la narrativa.
-Siempre que te atasques o quieras guardar tu sesión de juego, no dudes en regresar aquí.
 
 [[Volver-&gt;$pa]]</tw-passagedata><tw-passagedata pid="7" name="puerta" tags="" position="100,675" size="100,100">&lt;&lt;set $pa to passage()&gt;&gt;El joven Diego Paredes es segundo en llegar justo despues de vos, no tiene más ganas de estar acá que ninguno de ustedes. Asumes que algo habrá llegado a escuchar de Eliseo Morán pero una cosa son las pavadas que se cuentan por ahi y otras haberle conocido de verdad.
 
